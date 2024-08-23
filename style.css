@@ -1,0 +1,299 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --cyan: hsl(171, 61%, 46%);
+    --light-blue: hsl(233, 95%, 71%);
+    --shadow-mac: hsl(233, 51%, 49%);
+    --shadow-ios: hsl(171, 59%, 36%);
+    --dark-grayish-blue: hsl(213, 10%, 35%);
+    --grayish-blue: hsl(203, 9%, 65%);
+    --white: hsl(0, 0%, 100%);
+  }
+body {
+    font-family: "Bai Jamjuree", sans-serif;
+    background-image: url(bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 90px;
+    text-align: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px;
+    gap: 70px;
+}
+.top-sec {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.top-img {
+    margin: 50px 0;
+}
+.top-title {
+    font-weight: 800;
+    opacity: 0.7;
+    font-size: clamp(35px, 30px + 1.3vw, 55px);
+    /* clamp to make the vol of thetext flexale with the vol of the show wirhin limits that cannot pass */
+    line-height: 0.75;
+    height: fit-content;
+}
+
+.top-description {
+    font-size: clamp(16px, 15px + .355vw, 25px);
+    line-height: 1.8;
+    color: var(--grayish-blue);
+}
+.button {
+    display: flex;
+    gap: 30px;
+    padding: 25px 12px;
+}
+.btn {
+    color: var(--white);
+    padding: 15px 45px;
+    font-weight: 500;
+    border-radius: 60px;
+    font-size: 20px;
+    border: none;
+    margin: auto;
+    max-width: 450px;
+    line-height: 1.6;
+    cursor: pointer;
+}
+.btn-iso {
+    background-color: var(--cyan);
+    box-shadow: 0px 5px 0px var(--shadow-ios), 0px 5px 15px var(--shadow-ios);
+}
+.btn-mac {
+    background-color: var(--light-blue);
+    box-shadow: 0px 5px 0px var(--shadow-mac), 0px 5px 15px var(--shadow-mac);
+}
+.btn-iso:hover,
+.btn-mac:hover {
+    opacity: 0.5;
+    scale: 1.03;
+}
+.snippets {
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.snippet-title,
+.sec__ios-os-title {
+    font-size: 27px;
+    line-height: 35px;
+    font-weight: 750;
+    opacity: 0.7;
+}
+.snippet-discription,
+.text-sec-discription,
+.clipboard-discription,
+.sec__text-description,
+.sec__ios-os-description {
+    color: var(--grayish-blue);
+    font-size: 16px;
+    line-height: 1.6;
+}
+.sec__mac-ios-text,
+.text-sec-container {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+.imac-img {
+    width: 100%;
+}
+.text-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.text-sec-heading,
+.clipboard-title {
+    opacity: 0.7;
+    font-size: 25px;
+}
+.clipboard-img {
+    width: 100%;
+    height: auto;
+    padding: 45px 0 100px 0;
+}
+.clipboard-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding-top: 50px;
+    margin-top: 75px;
+}
+.sec__icons-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    margin-top: 28px;
+}
+.icon-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+    max-width: 100%;
+}
+.sec__text-title {
+    font-size: 25px;
+    font-weight: 750px;
+    opacity: 0.7;   
+}
+.sec-icon {
+    padding-bottom: 18px;
+}
+.sec-companies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    gap: 70px;
+}
+.company-logo {
+    width: 115px;
+}
+.sec__ios-os {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0 100px 0;
+    gap: 20px;
+}
+.sec__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e8e8e85c;
+    padding: 60px;
+    margin-top: 45px;
+    gap: 45px;
+}
+.footer-logo {
+    width: 55px;
+}
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-links a {
+    opacity: 0.8;
+    text-decoration: none;
+    color: black;
+}
+.footer-link {
+    font-size: 18px;
+}
+.footer-link:hover {
+    cursor: pointer;
+    color: var(--cyan);
+}
+.social-media-links {
+    display: flex;
+    gap: 40px;
+    margin: 8px 0 8px 0;
+}
+.social-media-icon-facebook:hover {
+    content: url(icon-facebook-green.svg);
+    cursor: pointer;
+}
+.social-media-icon-insta:hover {
+    content: url(icon-instagram-green.svg);
+    cursor: pointer;
+}
+.social-media-icon-twitter:hover {
+    content: url(icon-twitter-green.svg);
+    cursor: pointer;
+}
+/* .footer-links {
+    flex-direction: column;
+} */
+ .faq-contact,
+ .privacy-press {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+ }
+ /* display */
+@media (min-width: 1024px) {
+    body {
+        background-image: url(bg-header-desktop.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .top-title {
+        font-size: 50px;
+    }
+    .top-description {
+        font-size: 20px;
+        max-width: 750px;
+    }
+    .snippets {
+        font-size: 40px;
+        line-height: auto;
+    }
+    .snippet-discription {
+        max-width: 750px;
+        font-size: 19px;
+        margin-bottom: 55px;
+    }
+    .sec__mac-ios-text {
+        flex-direction: row;
+        gap: 110px;
+    }
+    .imac-img {
+        width: 80%;
+        margin-left: -310px;
+    }
+    .text-sec {
+        text-align: left;
+    }
+    .text-sec-heading {
+        font-size: 25px;
+    }
+    .text-sec-discription {
+        font-size: 16px;
+        max-width: 350px;
+    }
+    .clipboard-sec {
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .clipboard-img {
+        width: 90%;
+        padding-bottom: 100px;
+    }
+    .sec__icons-texts {
+        flex-direction: row;
+    }
+    .sec-companies {
+        flex-direction: row;
+    }
+    .sec__footer {
+        justify-content: space-between;
+        flex-direction: row;
+        text-align: left;
+        gap: 30px;
+    }
+    .footer-links {
+        flex-direction: row;
+        gap: 150px;
+    }
+}
